@@ -1,0 +1,29 @@
+.heading-section {
+    color: black;
+    font-family:"Microsoft Himalaya";
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+.employee_form {
+    margin: 10px;
+    border: solid;
+    width: 300px;
+    background-color: beige;
+    padding: 15px;
+    border-radius: 20px;
+}
+.employee_list{
+    margin: 10px;
+    border: solid;
+    width: 300px;
+    background-color: beige;
+    padding: 15px;
+    border-radius: 20px;
+}
+.umm{
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bolder;
+}

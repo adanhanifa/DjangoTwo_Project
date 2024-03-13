@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALL EMPLOYEES</title>
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+<body>
+<h2 class="umm">ALL EMPLOYEES IN OUR DATABASE</h2>
+<table border="10" bgcolor="#f5f5dc" width="50%" align="justify" cellpadding="10" cellspacing="5">
+    <thead>
+    <tr>
+        <td>NAME</td>
+        <td>AGE</td>
+        <td>BODY</td>
+        <td></td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for employee in show %}
+        <tr>
+          <td>{{employee.name}}</td>
+          <td>{{employee.age}}</td>
+          <td>{{employee.body}}</td>
+          <td>
+              <a href="{% url 'employee_update' employee.id %}"><button>UPDATE</button></a>
+              <a href="{% url 'delete' employee.id %}"><button>DELETE</button></a>
+          </td>
+        </tr>
+
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
